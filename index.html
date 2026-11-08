@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101322"><title>YT LIVE 24 BY 7</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="layout">
+<aside class="side"><div class="logo"><span>▶</span><b>YT LIVE<small>24 BY 7</small></b></div>
+<p class="muted tiny">WORKSPACE</p><a class="active" href="#home">▦　Overview</a><a href="#broadcasts">◉　Live Broadcasts</a><a href="#playlists">▤　Playlist Tools</a>
+<div class="sidefoot">● Secure YouTube connection</div></aside>
+<main>
+<header><div><p class="eyebrow">CREATOR CONTROL CENTER</p><h1>Live Streaming Dashboard</h1></div><button id="connect" class="primary">Connect YouTube</button></header>
+<div id="notice" class="notice">अपना YouTube चैनल कनेक्ट करें।</div>
+<section class="hero" id="home"><div><p class="eyebrow">YOUR CHANNEL · ONE CONTROL ROOM</p><h2>Plan. Schedule. Go Live.</h2><p>अपने YouTube broadcasts और playlists एक जगह manage करें।</p><a href="#broadcasts">Manage broadcasts →</a></div><div class="orb"><span>▶</span></div></section>
+<section class="stats">
+<article><small>CHANNEL</small><strong id="channel">Not connected</strong><em id="channelid">Connect to view</em></article>
+<article><small>SUBSCRIBERS</small><strong id="subs">—</strong><em>YouTube द्वारा उपलब्ध count</em></article>
+<article><small>TOTAL VIEWS</small><strong id="views">—</strong><em>Channel lifetime views</em></article>
+<article><small>VIDEOS</small><strong id="videos">—</strong><em>Uploaded videos</em></article>
+</section>
+<section class="panel" id="broadcasts"><div class="panelhead"><div><p class="eyebrow">YOUTUBE DATA API</p><h3>Live broadcasts</h3></div><button id="refresh" class="secondary">Refresh</button></div>
+<form id="broadcastform"><label>Broadcast title<input id="title" maxlength="100" placeholder="अपनी live stream का title" required></label><label>Description<textarea id="description" rows="3" placeholder="Stream के बारे में लिखें"></textarea></label><label>Scheduled start time<input id="start" type="datetime-local" required></label><button class="primary">Create private broadcast</button><p class="hint">यह YouTube पर private broadcast बनाएगा। वीडियो भेजने के लिए OBS या encoder अलग से connect करना होगा।</p></form><div id="broadcastlist" class="empty">YouTube connect करने पर broadcasts दिखेंगे।</div>
+</section>
+<section class="panel" id="playlists"><p class="eyebrow">PLAYLIST LOOKUP</p><h3>Playlist tools</h3><form id="playlistform" class="playlistform"><input id="playlistid" placeholder="YouTube Playlist ID डालें" required><button class="secondary">Load playlist</button></form><div id="playlistresult" class="empty">अपनी playlist का ID डालें।</div></section>
+<footer>YT LIVE 24 BY 7 · Official YouTube API · No artificial views or subscribers</footer>
+</main></div><script src="/app.js" defer></script>
+</body></html>
